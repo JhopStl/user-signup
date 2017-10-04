@@ -1,13 +1,16 @@
 <DOCTYPE!html>
     <html>
         <header>
+            <style>
+                .error {color:red;}
+            </style>
             <title>User Signup
             </title>
             <br>
             <h2>User Signup</h2>
         </header>
         <body>
-            <form action="/welcome" method="post">
+            <form method="post">
                 <table>
                     <tr>
                         <td>
@@ -16,30 +19,42 @@
                         <td>
                             <input type="text" name="username" value = '{{username}}'>
                         </td>
+                        <td>
+                        <p class = "error">{{username_error}}</p>
+                    </td>
                     </tr>
                     <tr>
                         <td>
                             Password
                         </td>
                         <td>
-                            <input type="password" name="password">
+                            <input type="password" name="password" value = '{{password}}'>
                         </td>
+                        <td>
+                        <p class= "error">{{password_error}}</p>
+                    </td>
                     </tr>
                     <tr>
                         <td>
                             Verify Password
                         </td>
                         <td>
-                            <input type="password" name="verify">
+                            <input type="password" name="verify" value = '{{verify}}'>
                         </td>
+                        <td>
+                        <p class= "error">{{verify_error}}</p>
+                    </td>
                     </tr>
                     <tr>
                         <td>
                             Email (optional)         
                         </td>
                         <td>
-                            <input type="text" name="email">
+                            <input type="text" name="email" value = '{{email}}'>
                         </td>
+                        <td>
+                        <p class= "error">{{email_error}}</p>
+                    </td>
                     </tr>
                     <tr>
                         <td>
