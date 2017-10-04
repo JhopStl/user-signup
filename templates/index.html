@@ -7,14 +7,14 @@
             <h2>User Signup</h2>
         </header>
         <body>
-            <form>
+            <form action="/welcome" method="post">
                 <table>
                     <tr>
                         <td>
                             Username
                         </td>
                         <td>
-                            <input type="text" name="username">
+                            <input type="text" name="username" value = '{{username}}'>
                         </td>
                     </tr>
                     <tr>
@@ -51,7 +51,7 @@
                     </tr>
                     <tr>
                         <td>
-                                <input type="submit" name="submitForm" value = "Submit">
+                                <input type="submit" value = "Submit">
                         </td>
                         <td>
                                 

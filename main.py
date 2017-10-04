@@ -8,4 +8,10 @@ app.config['DEBUG']=True
 def index():
     return render_template('index.html')
 
+@app.route("/welcome", methods=['POST'])
+def welcome():
+    username = request.form['username']
+    #return '<h1>Hello, '+ name + '</h1>'
+    return render_template('welcome.html', username=username)
+
 app.run()
